@@ -5,10 +5,14 @@ const UseCallbackPage = () => {
   const [count, setCount] = useState(0);
   const [count2, setCount2] = useState(0);
 
-  const increment = useCallback(() => {
+  // const increment = useCallback(() => {
+  //   console.log("Function recreated parent ");
+  //   setCount((prev) => prev + 1);
+  // }, []);
+  const increment = () => {
     console.log("Function recreated parent ");
     setCount((prev) => prev + 1);
-  }, []);
+  };
 
   return (
     <div>
@@ -22,7 +26,7 @@ const UseCallbackPage = () => {
         Increment Counter2
       </button>
 
-      <UseCallbackChild increment={increment} />
+      {/* <UseCallbackChild increment={increment} /> */}
 
       {/* Question 1 */}
       <h2 className="question">Question 1: What is useCallback in React?</h2>

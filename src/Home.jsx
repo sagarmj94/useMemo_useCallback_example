@@ -19,6 +19,10 @@ function Home() {
           <h3>useCallback</h3>
           <p>Memoize functions to prevent unnecessary re-renders.</p>
         </Link>
+        <Link to="/diffusememoandusecallback" className="hook-card">
+          <h3>diffusememoandusecallback</h3>
+          <p>diffusememoandusecallback</p>
+        </Link>
 
         {/* <Link to="/usestate" className="hook-card">
           <h3>useState</h3>
