@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/usememo" element={<UseMemoDetails />} />
-        {/* <Route path="/usecallback" element={<UseCallbackPage />} /> */}
+        <Route path="/usecallback" element={<UseCallbackPage />} />
         {/* <Route path="/usestate" element={<UseStatePage />} />  */}
       </Routes>
     </BrowserRouter>
