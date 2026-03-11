@@ -1,12 +1,18 @@
 import "./App.css";
-import UseMemoAnduseCallback from "./useMemoAnduseCallback";
-
+import Home from "./Home";
+import UseCallbackPage from "./UseCallbackPage";
+import UseMemoDetails from "./useMemoAnduseCallback";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-    <div>
-      <h2>useMemo And useCallback</h2>
-      <UseMemoAnduseCallback />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/usememo" element={<UseMemoDetails />} />
+        {/* <Route path="/usecallback" element={<UseCallbackPage />} /> */}
+        {/* <Route path="/usestate" element={<UseStatePage />} />  */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 
