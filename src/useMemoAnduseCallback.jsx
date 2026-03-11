@@ -6,7 +6,9 @@ const UseMemoAnduseCallback = () => {
   const [counter2, setCounter2] = useState(0);
 
   const squareValue = useMemo(() => {
-    console.log("Expensive Calculation...");
+    console.log(
+      "Expensive Calculation... this funtion only call when counter state update",
+    );
     return counter * counter;
   }, [counter]);
 
